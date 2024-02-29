@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="input-container">
-        <label for="name">Nome</label>
-        <input type="tel" id="name">
 
-        <label for="phone">Telefone</label>
-        <input type="tel" id="phone">
-        <button>Cadastrar</button>
-    </div>
-    <table>
-        <thead>
-            <th>nome</th>
-            <th>telefone</th>
-        </thead>
-        <tbody>
+<body class="flex">
+    <main class="main-content">
+        <div class="input-container">
+            <div class="input-item">
+                <label for="name" class="title">Nome</label>
+                <input type="tel" id="name" placeholder="Seu nome..">
+            </div>
+            <div class="input-item">
+                <label for="phone" class="title">Telefone</label>
+                <input type="tel" id="phone" placeholder="Seu telefone..">
 
-        </tbody>
-    </table>
+            </div>
+            <button>Cadastrar</button>
+        </div>
+        <table class="contacts flex">
+            <thead class="" >
+                <tr class="flex title-table">
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="flex title-table">
+                    <td>pedro</td>
+                    <td>12345</td>
+                </tr>
+
+                <tr class="flex title-table">
+                    <td>pedro</td>
+                    <td>12345</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
 </body>
+
 </html>
