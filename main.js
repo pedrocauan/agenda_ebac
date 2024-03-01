@@ -39,7 +39,7 @@ function validateSubmit(name, phone) {
         return false;
     }
     //valida se não existem dois contatos com o mesmo telefone
-    if(contactNumbers.includes(phone)) {
+    if(contactNumbers.includes(phone.toString().trim())) {
         error = `O contato <strong style="color: yellow">${contactNames[contactNames.indexOf(name)]}</strong> já possui este telefone`;
         return false;
     }
