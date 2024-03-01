@@ -39,7 +39,7 @@ function validateSubmit(name, phone) {
         return false;
     }
     //valida se não existem dois contatos com o mesmo telefone
-    if(contactNumbers.includes(phone.toString().trim())) {
+    if(contactNumbers.includes(phone.toString())) {
         error = `O contato <strong style="color: yellow">${contactNames[contactNames.indexOf(name)]}</strong> já possui este telefone`;
         return false;
     }
@@ -77,7 +77,7 @@ name.addEventListener("keypress", function(e) {
 
 button.addEventListener("click", function(e) {
     const errorMessage = document.querySelector(".error-message");
-    if(validateSubmit(name.value, phone.value) === false){
+    if(validateSubmit(name.value.trim(), phone.value.trim()) === false){
         errorMessage.innerHTML = `<p class="error">${error}</p>`;
         return;
     } else {
