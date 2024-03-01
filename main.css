@@ -9,6 +9,8 @@ body {
     min-height: 100vh;
     background: linear-gradient(#000, #111, #222);
     font-family: "Kode Mono", monospace;
+    flex-direction: column;
+    gap: 30px;
 
 }
 
@@ -27,8 +29,7 @@ body {
 
 .contacts {
     flex-direction: column;
-    
-    
+    width: 100%;
 }
 
 .title-table th, td {
@@ -39,11 +40,18 @@ body {
     font-size: 25px;
 }
 
+
+.title-table tr {
+    justify-content: space-evenly;
+}
+
 .title-table td {
     margin: 30px;
     font-size: 20px;
     border-bottom: 4px solid rgba(0, 0, 0, 0.7);
     border-radius: 4px;
+    text-align: center;
+    display: inline-block;
 
 }
 
@@ -83,4 +91,15 @@ body {
     background-color: rgb(224, 86, 109) ;
     color: white;
     cursor: pointer;
+}
+
+
+.error {
+    background-color: red;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
 }

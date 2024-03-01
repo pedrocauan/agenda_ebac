@@ -13,19 +13,21 @@
 
 <body class="flex">
     <main class="main-content">
-        <div class="input-container">
+        <div class="error-message"></div>
+
+        <div class="input-container">   
             <div class="input-item">
                 <label for="name" class="title">Nome</label>
                 <input type="tel" id="name" placeholder="Seu nome..">
             </div>
             <div class="input-item">
                 <label for="phone" class="title">Telefone</label>
-                <input type="tel" id="phone" placeholder="Seu telefone..">
+                <input type="text" id="phone" placeholder="Ex: (19) 1111-1111">
 
             </div>
-            <button>Cadastrar</button>
+            <button id="button">Cadastrar</button>
         </div>
-        <table class="contacts flex">
+        <table id class="contacts flex">
             <thead class="" >
                 <tr class="flex title-table">
                     <th>Nome</th>
@@ -33,19 +35,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="flex title-table">
-                    <td>pedro</td>
-                    <td>12345</td>
-                </tr>
-
-                <tr class="flex title-table">
-                    <td>pedro</td>
-                    <td>12345</td>
-                </tr>
+              
             </tbody>
         </table>
-
     </main>
 </body>
 
+<script src="./main.js"></script>
 </html>
