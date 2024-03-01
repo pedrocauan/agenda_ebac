@@ -35,20 +35,20 @@ function isValidNameDigit(key) {
 function validateSubmit(name, phone) {
     //valida se o campo ta vazio
     if(!name || !phone) {
-        error = "Algum dos campos está vazio";
+        error = "Algum dos campos <strong style='color:yellow'>está vazio</strong>";
         return false;
     }
     //valida se não existem dois contatos com o mesmo telefone
     if(contactNumbers.includes(phone.toString())) {
-        error = `O contato <strong style="color: yellow">${contactNames[contactNames.indexOf(name)]}</strong> já possui este telefone`;
+        error = `Um contato <strong style="color:yellow">já possui este telefone</strong>`;
         return false;
     }
  }
 
 function addContact(){
     //adiciona no array de contatos
-    contactNames.push(name.value);
-    contactNumbers.push(phone.value);
+    contactNames.push(name.value.trim());
+    contactNumbers.push(phone.value.trim());
 
     //adiciona na tela
     let contact = `<tr class="flex title-table">`;
